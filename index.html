@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Hello there -->
+<head>
+    <meta charset="utf-8">
+    <title>Robotics Poll</title>
+
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+
+    <script type="text/javascript">
+        const mySpreadsheet = "https://docs.google.com/spreadsheets/d/1L4fgpABJTbWa1ZFsfhM_jG0yabWhtO_3kva-48VdnZ8/edit?gid=1838906649#gid=1838906649";
+        function init() {
+            $('#statistics').sheetrock({
+                url: mySpreadsheet
+            });
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <table id="statistics" class="table table-condensed table-striped"></table>
+
+</body>
+
+</html>
